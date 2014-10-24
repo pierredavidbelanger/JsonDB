@@ -1,0 +1,824 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26E4B34D7BC5FEFE49F89CDD /* libPods-JsonDB-Tests-OSX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B86C87622AF0EAB8D18C0C2C /* libPods-JsonDB-Tests-OSX.a */; };
+		2B34F19B19ED5A41000061A1 /* UseCaseSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B787FB119EB0D42000FC521 /* UseCaseSpec.m */; };
+		2B34F19C19ED63E8000061A1 /* CornerCaseSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B787FB419EB6B3E000FC521 /* CornerCaseSpec.m */; };
+		2B85626719F817AF008CC06A /* DocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B85626619F817AF008CC06A /* DocumentViewController.m */; };
+		2B85626A19F822E8008CC06A /* JSONTextBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B85626919F822E8008CC06A /* JSONTextBehavior.m */; };
+		2B93EE6A19EABBC300932B13 /* TemplateIcon2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B93EE6719EABBC300932B13 /* TemplateIcon2x.png */; };
+		2B93EE6B19EABBC300932B13 /* TemplateIcon2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B93EE6719EABBC300932B13 /* TemplateIcon2x.png */; };
+		2BA7EAD019F01BCE0042574F /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BA7EACF19F01BCE0042574F /* users.json */; };
+		2BA7EAD119F01BCE0042574F /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BA7EACF19F01BCE0042574F /* users.json */; };
+		2BA7EADB19F060460042574F /* CornerCaseSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B787FB419EB6B3E000FC521 /* CornerCaseSpec.m */; };
+		2BA7EADC19F060800042574F /* DatabaseCreationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B93AB5819E9A05E0087ADD1 /* DatabaseCreationSpec.m */; };
+		2BA7EADD19F060850042574F /* DatabaseCreationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B93AB5819E9A05E0087ADD1 /* DatabaseCreationSpec.m */; };
+		2BB1CC7719E8DFE500FEBF34 /* donuts.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BB1CC7619E8DFE500FEBF34 /* donuts.json */; };
+		2BB1CC7819E8DFE500FEBF34 /* donuts.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BB1CC7619E8DFE500FEBF34 /* donuts.json */; };
+		2BB2FFCD19EC4C1700459B1E /* UseCaseSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B787FB119EB0D42000FC521 /* UseCaseSpec.m */; };
+		2BB3212419F7DFC40015DA2F /* CollectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB3212319F7DFC40015DA2F /* CollectionsViewController.m */; };
+		2BB3212719F7F29E0015DA2F /* QueriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB3212619F7F29E0015DA2F /* QueriesViewController.m */; };
+		2BB3212819F7F85D0015DA2F /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BA7EACF19F01BCE0042574F /* users.json */; };
+		2BB3212B19F7FD270015DA2F /* DocumentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB3212A19F7FD270015DA2F /* DocumentsViewController.m */; };
+		2BB3212E19F80C2D0015DA2F /* QueryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB3212D19F80C2D0015DA2F /* QueryViewController.m */; };
+		2BBAABC419F88CF300884FB3 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBAABC319F88CF300884FB3 /* CollectionViewController.m */; };
+		2BE179D219F799CF00398D39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE179D119F799CF00398D39 /* main.m */; };
+		2BE179D519F799CF00398D39 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE179D419F799CF00398D39 /* AppDelegate.m */; };
+		2BE179DB19F799CF00398D39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BE179D919F799CF00398D39 /* Main.storyboard */; };
+		2BE179DD19F799CF00398D39 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BE179DC19F799CF00398D39 /* Images.xcassets */; };
+		2BE179E019F799CF00398D39 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BE179DE19F799CF00398D39 /* LaunchScreen.xib */; };
+		2FCC61585346E7F2DF08FF45 /* libPods-JsonDB-Tests-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17DD1EF5430DA5DB8F76B186 /* libPods-JsonDB-Tests-iOS.a */; };
+		C019E5ACC8411FAF41B872C6 /* libPods-JsonDB-Demo-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B34E491BDC6BC2BDEF6D6FC7 /* libPods-JsonDB-Demo-iOS.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		17DD1EF5430DA5DB8F76B186 /* libPods-JsonDB-Tests-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JsonDB-Tests-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BE82C1899210F4CCB959680 /* Pods-JsonDB-Tests-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JsonDB-Tests-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-JsonDB-Tests-iOS/Pods-JsonDB-Tests-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		2B39546D19E9B2C000EC8267 /* JsonDB-Tests.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JsonDB-Tests.pch"; sourceTree = "<group>"; };
+		2B787FB119EB0D42000FC521 /* UseCaseSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UseCaseSpec.m; sourceTree = "<group>"; };
+		2B787FB419EB6B3E000FC521 /* CornerCaseSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CornerCaseSpec.m; sourceTree = "<group>"; };
+		2B85626519F817AF008CC06A /* DocumentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocumentViewController.h; sourceTree = "<group>"; };
+		2B85626619F817AF008CC06A /* DocumentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocumentViewController.m; sourceTree = "<group>"; };
+		2B85626819F822E8008CC06A /* JSONTextBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONTextBehavior.h; sourceTree = "<group>"; };
+		2B85626919F822E8008CC06A /* JSONTextBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONTextBehavior.m; sourceTree = "<group>"; };
+		2B93AB5819E9A05E0087ADD1 /* DatabaseCreationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseCreationSpec.m; sourceTree = "<group>"; };
+		2B93EE6719EABBC300932B13 /* TemplateIcon2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon2x.png; sourceTree = "<group>"; };
+		2BA7EACF19F01BCE0042574F /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
+		2BB1CC7619E8DFE500FEBF34 /* donuts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = donuts.json; sourceTree = "<group>"; };
+		2BB3212219F7DFC40015DA2F /* CollectionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionsViewController.h; sourceTree = "<group>"; };
+		2BB3212319F7DFC40015DA2F /* CollectionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionsViewController.m; sourceTree = "<group>"; };
+		2BB3212519F7F29E0015DA2F /* QueriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueriesViewController.h; sourceTree = "<group>"; };
+		2BB3212619F7F29E0015DA2F /* QueriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueriesViewController.m; sourceTree = "<group>"; };
+		2BB3212919F7FD270015DA2F /* DocumentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocumentsViewController.h; sourceTree = "<group>"; };
+		2BB3212A19F7FD270015DA2F /* DocumentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocumentsViewController.m; sourceTree = "<group>"; };
+		2BB3212C19F80C2D0015DA2F /* QueryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueryViewController.h; sourceTree = "<group>"; };
+		2BB3212D19F80C2D0015DA2F /* QueryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueryViewController.m; sourceTree = "<group>"; };
+		2BBAABC219F88CF300884FB3 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		2BBAABC319F88CF300884FB3 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		2BBD3F9019E9A772004CF503 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BC84A2B19E8DC6E004DB8F8 /* JsonDB-Tests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "JsonDB-Tests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BC84A3919E8DC83004DB8F8 /* JsonDB-Tests-OSX.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "JsonDB-Tests-OSX.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BE179CD19F799CF00398D39 /* JsonDB-Demo-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JsonDB-Demo-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BE179D019F799CF00398D39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BE179D119F799CF00398D39 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2BE179D319F799CF00398D39 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2BE179D419F799CF00398D39 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2BE179DA19F799CF00398D39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2BE179DC19F799CF00398D39 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2BE179DF19F799CF00398D39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		6F0972697F0D1628C1BD5D4B /* Pods-JsonDB-Tests-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JsonDB-Tests-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JsonDB-Tests-iOS/Pods-JsonDB-Tests-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		895A64A789CDC2C253C94741 /* Pods-JsonDB-Tests-OSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JsonDB-Tests-OSX.release.xcconfig"; path = "Pods/Target Support Files/Pods-JsonDB-Tests-OSX/Pods-JsonDB-Tests-OSX.release.xcconfig"; sourceTree = "<group>"; };
+		AB001C1F0FA8F039ACE3FDEC /* Pods-JsonDB-Demo-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JsonDB-Demo-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-JsonDB-Demo-iOS/Pods-JsonDB-Demo-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		B056FE49D8B47C566402DC15 /* Pods-JsonDB-Demo-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JsonDB-Demo-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JsonDB-Demo-iOS/Pods-JsonDB-Demo-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		B34E491BDC6BC2BDEF6D6FC7 /* libPods-JsonDB-Demo-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JsonDB-Demo-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B86C87622AF0EAB8D18C0C2C /* libPods-JsonDB-Tests-OSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JsonDB-Tests-OSX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA35F2A962A16A632FCE342B /* Pods-JsonDB-Tests-OSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JsonDB-Tests-OSX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JsonDB-Tests-OSX/Pods-JsonDB-Tests-OSX.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2BC84A2819E8DC6E004DB8F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FCC61585346E7F2DF08FF45 /* libPods-JsonDB-Tests-iOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BC84A3619E8DC83004DB8F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26E4B34D7BC5FEFE49F89CDD /* libPods-JsonDB-Tests-OSX.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BE179CA19F799CF00398D39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C019E5ACC8411FAF41B872C6 /* libPods-JsonDB-Demo-iOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2BB1CC7219E8DF6D00FEBF34 /* JsonDB-Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2BBD3F9019E9A772004CF503 /* Info.plist */,
+				2BB1CC7619E8DFE500FEBF34 /* donuts.json */,
+				2B93AB5819E9A05E0087ADD1 /* DatabaseCreationSpec.m */,
+				2B787FB119EB0D42000FC521 /* UseCaseSpec.m */,
+				2B787FB419EB6B3E000FC521 /* CornerCaseSpec.m */,
+				2B39546D19E9B2C000EC8267 /* JsonDB-Tests.pch */,
+				2B93EE6719EABBC300932B13 /* TemplateIcon2x.png */,
+				2BA7EACF19F01BCE0042574F /* users.json */,
+			);
+			path = "JsonDB-Tests";
+			sourceTree = "<group>";
+		};
+		2BC84A2019E8DBFC004DB8F8 = {
+			isa = PBXGroup;
+			children = (
+				2BB1CC7219E8DF6D00FEBF34 /* JsonDB-Tests */,
+				2BE179CE19F799CF00398D39 /* JsonDB-Demo-iOS */,
+				2BC84A2C19E8DC6E004DB8F8 /* Products */,
+				E92E93D29BD5BBF3E54C1450 /* Pods */,
+				40F0C97C5BF80E9B9006ABA1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2BC84A2C19E8DC6E004DB8F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BC84A2B19E8DC6E004DB8F8 /* JsonDB-Tests-iOS.xctest */,
+				2BC84A3919E8DC83004DB8F8 /* JsonDB-Tests-OSX.xctest */,
+				2BE179CD19F799CF00398D39 /* JsonDB-Demo-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2BE179CE19F799CF00398D39 /* JsonDB-Demo-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2BE179D319F799CF00398D39 /* AppDelegate.h */,
+				2BE179D419F799CF00398D39 /* AppDelegate.m */,
+				2B85626819F822E8008CC06A /* JSONTextBehavior.h */,
+				2B85626919F822E8008CC06A /* JSONTextBehavior.m */,
+				2BB3212219F7DFC40015DA2F /* CollectionsViewController.h */,
+				2BB3212319F7DFC40015DA2F /* CollectionsViewController.m */,
+				2BBAABC219F88CF300884FB3 /* CollectionViewController.h */,
+				2BBAABC319F88CF300884FB3 /* CollectionViewController.m */,
+				2BB3212519F7F29E0015DA2F /* QueriesViewController.h */,
+				2BB3212619F7F29E0015DA2F /* QueriesViewController.m */,
+				2BB3212C19F80C2D0015DA2F /* QueryViewController.h */,
+				2BB3212D19F80C2D0015DA2F /* QueryViewController.m */,
+				2BB3212919F7FD270015DA2F /* DocumentsViewController.h */,
+				2BB3212A19F7FD270015DA2F /* DocumentsViewController.m */,
+				2B85626519F817AF008CC06A /* DocumentViewController.h */,
+				2B85626619F817AF008CC06A /* DocumentViewController.m */,
+				2BE179D919F799CF00398D39 /* Main.storyboard */,
+				2BE179DC19F799CF00398D39 /* Images.xcassets */,
+				2BE179DE19F799CF00398D39 /* LaunchScreen.xib */,
+				2BE179CF19F799CF00398D39 /* Supporting Files */,
+			);
+			path = "JsonDB-Demo-iOS";
+			sourceTree = "<group>";
+		};
+		2BE179CF19F799CF00398D39 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2BE179D019F799CF00398D39 /* Info.plist */,
+				2BE179D119F799CF00398D39 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		40F0C97C5BF80E9B9006ABA1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B86C87622AF0EAB8D18C0C2C /* libPods-JsonDB-Tests-OSX.a */,
+				17DD1EF5430DA5DB8F76B186 /* libPods-JsonDB-Tests-iOS.a */,
+				B34E491BDC6BC2BDEF6D6FC7 /* libPods-JsonDB-Demo-iOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E92E93D29BD5BBF3E54C1450 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FA35F2A962A16A632FCE342B /* Pods-JsonDB-Tests-OSX.debug.xcconfig */,
+				895A64A789CDC2C253C94741 /* Pods-JsonDB-Tests-OSX.release.xcconfig */,
+				6F0972697F0D1628C1BD5D4B /* Pods-JsonDB-Tests-iOS.debug.xcconfig */,
+				1BE82C1899210F4CCB959680 /* Pods-JsonDB-Tests-iOS.release.xcconfig */,
+				B056FE49D8B47C566402DC15 /* Pods-JsonDB-Demo-iOS.debug.xcconfig */,
+				AB001C1F0FA8F039ACE3FDEC /* Pods-JsonDB-Demo-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2BC84A2A19E8DC6E004DB8F8 /* JsonDB-Tests-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BC84A3219E8DC6E004DB8F8 /* Build configuration list for PBXNativeTarget "JsonDB-Tests-iOS" */;
+			buildPhases = (
+				D590D0AA720C15E315243EC6 /* Check Pods Manifest.lock */,
+				2BC84A2719E8DC6E004DB8F8 /* Sources */,
+				2BC84A2819E8DC6E004DB8F8 /* Frameworks */,
+				2BC84A2919E8DC6E004DB8F8 /* Resources */,
+				9E440A18B78133E03660CFB1 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JsonDB-Tests-iOS";
+			productName = "JsonDB-Tests-iOS";
+			productReference = 2BC84A2B19E8DC6E004DB8F8 /* JsonDB-Tests-iOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2BC84A3819E8DC83004DB8F8 /* JsonDB-Tests-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BC84A3F19E8DC83004DB8F8 /* Build configuration list for PBXNativeTarget "JsonDB-Tests-OSX" */;
+			buildPhases = (
+				54A33DBCE9D2CC99B42538AE /* Check Pods Manifest.lock */,
+				2BC84A3519E8DC83004DB8F8 /* Sources */,
+				2BC84A3619E8DC83004DB8F8 /* Frameworks */,
+				2BC84A3719E8DC83004DB8F8 /* Resources */,
+				B44157D3E86EBF4EA00B7070 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JsonDB-Tests-OSX";
+			productName = "JsonDB-Tests-OSX";
+			productReference = 2BC84A3919E8DC83004DB8F8 /* JsonDB-Tests-OSX.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2BE179CC19F799CF00398D39 /* JsonDB-Demo-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BE179ED19F799CF00398D39 /* Build configuration list for PBXNativeTarget "JsonDB-Demo-iOS" */;
+			buildPhases = (
+				B9FAE8DA604F53F66478E189 /* Check Pods Manifest.lock */,
+				2BE179C919F799CF00398D39 /* Sources */,
+				2BE179CA19F799CF00398D39 /* Frameworks */,
+				2BE179CB19F799CF00398D39 /* Resources */,
+				7E76C216BEFCABB82282419A /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JsonDB-Demo-iOS";
+			productName = "JsonDB-Demo-iOS";
+			productReference = 2BE179CD19F799CF00398D39 /* JsonDB-Demo-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2BC84A2119E8DBFC004DB8F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				TargetAttributes = {
+					2BC84A2A19E8DC6E004DB8F8 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					2BC84A3819E8DC83004DB8F8 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					2BE179CC19F799CF00398D39 = {
+						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = HX5SQ2EY4E;
+					};
+				};
+			};
+			buildConfigurationList = 2BC84A2419E8DBFC004DB8F8 /* Build configuration list for PBXProject "JsonDB-Tests" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2BC84A2019E8DBFC004DB8F8;
+			productRefGroup = 2BC84A2C19E8DC6E004DB8F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2BE179CC19F799CF00398D39 /* JsonDB-Demo-iOS */,
+				2BC84A2A19E8DC6E004DB8F8 /* JsonDB-Tests-iOS */,
+				2BC84A3819E8DC83004DB8F8 /* JsonDB-Tests-OSX */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2BC84A2919E8DC6E004DB8F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BA7EAD019F01BCE0042574F /* users.json in Resources */,
+				2BB1CC7719E8DFE500FEBF34 /* donuts.json in Resources */,
+				2B93EE6A19EABBC300932B13 /* TemplateIcon2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BC84A3719E8DC83004DB8F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BA7EAD119F01BCE0042574F /* users.json in Resources */,
+				2BB1CC7819E8DFE500FEBF34 /* donuts.json in Resources */,
+				2B93EE6B19EABBC300932B13 /* TemplateIcon2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BE179CB19F799CF00398D39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BB3212819F7F85D0015DA2F /* users.json in Resources */,
+				2BE179DB19F799CF00398D39 /* Main.storyboard in Resources */,
+				2BE179E019F799CF00398D39 /* LaunchScreen.xib in Resources */,
+				2BE179DD19F799CF00398D39 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		54A33DBCE9D2CC99B42538AE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7E76C216BEFCABB82282419A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JsonDB-Demo-iOS/Pods-JsonDB-Demo-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E440A18B78133E03660CFB1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JsonDB-Tests-iOS/Pods-JsonDB-Tests-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B44157D3E86EBF4EA00B7070 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JsonDB-Tests-OSX/Pods-JsonDB-Tests-OSX-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9FAE8DA604F53F66478E189 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D590D0AA720C15E315243EC6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2BC84A2719E8DC6E004DB8F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BA7EADC19F060800042574F /* DatabaseCreationSpec.m in Sources */,
+				2BA7EADB19F060460042574F /* CornerCaseSpec.m in Sources */,
+				2B34F19B19ED5A41000061A1 /* UseCaseSpec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BC84A3519E8DC83004DB8F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BA7EADD19F060850042574F /* DatabaseCreationSpec.m in Sources */,
+				2B34F19C19ED63E8000061A1 /* CornerCaseSpec.m in Sources */,
+				2BB2FFCD19EC4C1700459B1E /* UseCaseSpec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BE179C919F799CF00398D39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BE179D519F799CF00398D39 /* AppDelegate.m in Sources */,
+				2BB3212419F7DFC40015DA2F /* CollectionsViewController.m in Sources */,
+				2BE179D219F799CF00398D39 /* main.m in Sources */,
+				2B85626719F817AF008CC06A /* DocumentViewController.m in Sources */,
+				2B85626A19F822E8008CC06A /* JSONTextBehavior.m in Sources */,
+				2BB3212719F7F29E0015DA2F /* QueriesViewController.m in Sources */,
+				2BB3212B19F7FD270015DA2F /* DocumentsViewController.m in Sources */,
+				2BB3212E19F80C2D0015DA2F /* QueryViewController.m in Sources */,
+				2BBAABC419F88CF300884FB3 /* CollectionViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2BE179D919F799CF00398D39 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BE179DA19F799CF00398D39 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2BE179DE19F799CF00398D39 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BE179DF19F799CF00398D39 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2BC84A2519E8DBFC004DB8F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		2BC84A2619E8DBFC004DB8F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		2BC84A3319E8DC6E004DB8F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F0972697F0D1628C1BD5D4B /* Pods-JsonDB-Tests-iOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "JsonDB-Tests/JsonDB-Tests.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "JsonDB-Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2BC84A3419E8DC6E004DB8F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BE82C1899210F4CCB959680 /* Pods-JsonDB-Tests-iOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREFIX_HEADER = "JsonDB-Tests/JsonDB-Tests.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "JsonDB-Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2BC84A4019E8DC83004DB8F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA35F2A962A16A632FCE342B /* Pods-JsonDB-Tests-OSX.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "JsonDB-Tests/JsonDB-Tests.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "JsonDB-Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2BC84A4119E8DC83004DB8F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 895A64A789CDC2C253C94741 /* Pods-JsonDB-Tests-OSX.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREFIX_HEADER = "JsonDB-Tests/JsonDB-Tests.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "JsonDB-Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2BE179EE19F799CF00398D39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B056FE49D8B47C566402DC15 /* Pods-JsonDB-Demo-iOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "JsonDB-Demo-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2BE179EF19F799CF00398D39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB001C1F0FA8F039ACE3FDEC /* Pods-JsonDB-Demo-iOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "JsonDB-Demo-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2BC84A2419E8DBFC004DB8F8 /* Build configuration list for PBXProject "JsonDB-Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BC84A2519E8DBFC004DB8F8 /* Debug */,
+				2BC84A2619E8DBFC004DB8F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BC84A3219E8DC6E004DB8F8 /* Build configuration list for PBXNativeTarget "JsonDB-Tests-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BC84A3319E8DC6E004DB8F8 /* Debug */,
+				2BC84A3419E8DC6E004DB8F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BC84A3F19E8DC83004DB8F8 /* Build configuration list for PBXNativeTarget "JsonDB-Tests-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BC84A4019E8DC83004DB8F8 /* Debug */,
+				2BC84A4119E8DC83004DB8F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BE179ED19F799CF00398D39 /* Build configuration list for PBXNativeTarget "JsonDB-Demo-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BE179EE19F799CF00398D39 /* Debug */,
+				2BE179EF19F799CF00398D39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2BC84A2119E8DBFC004DB8F8 /* Project object */;
+}
