@@ -1,0 +1,4 @@
+language: objective-c
+podfile: JsonDB-Tests/Podfile
+xcode_workspace: JsonDB-Tests/JsonDB-Tests.xcworkspace
+xcode_scheme: JsonDB-Tests-OSX
