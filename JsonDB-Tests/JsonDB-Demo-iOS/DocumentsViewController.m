@@ -49,10 +49,8 @@
 
 - (NSIndexPath *)pagedIndexPath:(NSIndexPath *)indexPath {
     if (!self.pageObjects || indexPath.row < self.pageRange.location || indexPath.row >= self.pageRange.location + self.pageRange.length) {
-        if (indexPath.row < self.pageRange.location) {
-            self.pageRange = NSMakeRange(self.pageRange.location - self.pageRange.length, self.pageRange.length);
-        } else if (indexPath.row >= self.pageRange.location + self.pageRange.length) {
-            self.pageRange = NSMakeRange(self.pageRange.location + self.pageRange.length, self.pageRange.length);
+        if (indexPath.row < self.pageRange.location || indexPath.row >= self.pageRange.location + self.pageRange.length) {
+            self.pageRange = NSMakeRange((indexPath.row / self.pageRange.length) * self.pageRange.length, self.pageRange.length);
         }
         if (self.query[@"projection"]) {
             NSArray *keys = [[NSOrderedSet orderedSetWithArray:[self.query[@"projection"] arrayByAddingObject:@"id"]] array];
@@ -63,7 +61,7 @@
             self.pageObjects = [self.dbQuery allInRange:self.pageRange];
         }
     }
-    return [NSIndexPath indexPathForRow:indexPath.row - self.pageRange.location inSection:indexPath.section];
+    return [NSIndexPath indexPathForRow:(indexPath.row % self.pageRange.length) inSection:indexPath.section];
 }
 
 - (id)pageObjectAtIndexPath:(NSIndexPath *)indexPath {
