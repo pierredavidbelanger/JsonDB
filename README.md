@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/JsonDB.svg?style=flat)](http://cocoadocs.org/docsets/JsonDB)
 [![Platform](https://img.shields.io/cocoapods/p/JsonDB.svg?style=flat)](http://cocoadocs.org/docsets/JsonDB)
 
-JsonDB is a [simple](#architecture) in process database to store, query and manipulate JSON documents in Objective-C for OS X (10.7+) and iOS (5.0+). It's built on top of the excellent [FMDB](https://github.com/ccgus/fmdb) which is an Objective-C wrapper around [SQLite](http://www.sqlite.org/).
+JsonDB is a [simple](#architecture) in process database to store, query and manipulate JSON documents for OS X (10.7+) and iOS (5.0+). It's built on top of the excellent [FMDB](https://github.com/ccgus/fmdb) which is an Objective-C wrapper around [SQLite](http://www.sqlite.org/).
 
 This project was born as a little private helper library in a toy OS X project where I needed to cache and query a fair amount of JSON documents. The library somehow evolved into a reusable standalone project.
 
@@ -17,7 +17,7 @@ I hope you enjoy this project.
 
 You should expect the public API to change until I tag a `1.0.0` version. After that, I will try to follow as much as possible the [Semantic Versioning](http://semver.org/).
 
-JsonDB should be compatible with Swift. I will soon make a test case to confirm this.
+JsonDB is coded in and designed for Objective-C, but it also works with Swift, you just need to add `#import "JsonDB.h"` in the Bridging Header.
 
 ## Get Started
 
@@ -25,7 +25,7 @@ Try the [demo app](#demo).
 
 Or [install](#installation) the library and follow the example [usage](#usage).
 
-The [documentation](http://cocoadocs.org/docsets/JsonDB) should be up soon.
+The [documentation](http://cocoadocs.org/docsets/JsonDB) will be completed soon.
 
 ## Architecture
 
