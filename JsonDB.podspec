@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
   s.name = "JsonDB"
-  s.version = "0.1.0"
-  s.summary = "Objective-C JSON database."
-  s.description = "A simple in process database to store, query and manipulate JSON documents in Objective-C."
+  s.version = "0.2.0"
+  s.summary = "A simple in process database to store, query and manipulate JSON documents in Objective-C."
+  s.description = s.summary
   s.homepage = "https://github.com/pierredavidbelanger/JsonDB"
   s.license = 'MIT'
   s.author = { "Pierre-David Bélanger" => "pierredavidbelanger@gmail.com" }

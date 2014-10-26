@@ -53,10 +53,8 @@
             self.pageRange = NSMakeRange((indexPath.row / self.pageRange.length) * self.pageRange.length, self.pageRange.length);
         }
         if (self.query[@"projection"]) {
-            NSArray *keys = [[NSOrderedSet orderedSetWithArray:[self.query[@"projection"] arrayByAddingObject:@"id"]] array];
-            self.pageObjects = [self.dbQuery allInRange:self.pageRange andProject:^id(NSDictionary *document) {
-                return [document dictionaryWithValuesForKeys:keys];
-            }];
+            NSArray *keyPaths = [[NSOrderedSet orderedSetWithArray:[self.query[@"projection"] arrayByAddingObject:@"id"]] array];
+            self.pageObjects = [self.dbQuery allInRange:self.pageRange andProjectKeyPaths:keyPaths];
         } else {
             self.pageObjects = [self.dbQuery allInRange:self.pageRange];
         }

@@ -45,14 +45,17 @@ typedef JDBModifyOperation (^JDBModificationBlock)(NSMutableDictionary *document
 
 - (NSArray *)all;
 - (NSArray *)allAndProject:(JDBProjectionBlock)block;
+- (NSArray *)allAndProjectKeyPaths:(NSArray *)keyPaths;
 - (NSArray *)allAndModify:(JDBModificationBlock)block;
 
 - (NSArray *)allInRange:(NSRange)range;
 - (NSArray *)allInRange:(NSRange)range andProject:(JDBProjectionBlock)block;
+- (NSArray *)allInRange:(NSRange)range andProjectKeyPaths:(NSArray *)keyPaths;
 - (NSArray *)allInRange:(NSRange)range andModify:(JDBModificationBlock)block;
 
 - (id)first;
 - (id)firstAndProject:(JDBProjectionBlock)block;
+- (id)firstAndProjectKeyPaths:(NSArray *)keyPaths;
 - (id)firstAndModify:(JDBModificationBlock)block;
 
 - (NSUInteger)removeAll;

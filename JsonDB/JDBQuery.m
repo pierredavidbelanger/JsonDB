@@ -47,7 +47,13 @@
 }
 
 - (NSArray *)allAndProject:(JDBProjectionBlock)block {
-    return [self executeInRange:NSMakeRange(0, NSUIntegerMax) andProject:block];;
+    return [self executeInRange:NSMakeRange(0, NSUIntegerMax) andProject:block];
+}
+
+- (NSArray *)allAndProjectKeyPaths:(NSArray *)keyPaths {
+    return [self executeInRange:NSMakeRange(0, NSUIntegerMax) andProject:^id(NSDictionary *document) {
+        return [self project:document withKeyPaths:keyPaths];
+    }];
 }
 
 - (NSArray *)allAndModify:(JDBModificationBlock)block {
@@ -62,6 +68,12 @@
     return [self executeInRange:range andProject:block];
 }
 
+- (NSArray *)allInRange:(NSRange)range andProjectKeyPaths:(NSArray *)keyPaths {
+    return [self executeInRange:range andProject:^id(NSDictionary *document) {
+        return [self project:document withKeyPaths:keyPaths];
+    }];
+}
+
 - (NSArray *)allInRange:(NSRange)range andModify:(JDBModificationBlock)block {
     return [self executeInRange:range andModify:block];
 }
@@ -72,6 +84,12 @@
 
 - (id)firstAndProject:(JDBProjectionBlock)block {
     return [[self executeInRange:NSMakeRange(0, 1) andProject:block] firstObject];
+}
+
+- (id)firstAndProjectKeyPaths:(NSArray *)keyPaths {
+    return [[self executeInRange:NSMakeRange(0, 1) andProject:^id(NSDictionary *document) {
+        return [self project:document withKeyPaths:keyPaths];
+    }] firstObject];
 }
 
 - (id)firstAndModify:(JDBModificationBlock)block {
@@ -106,6 +124,17 @@
 }
 
 #pragma mark - private
+
+- (NSDictionary *)project:(NSDictionary *)document withKeyPaths:(NSArray *)keyPaths {
+    NSMutableDictionary *result = [NSMutableDictionary dictionaryWithCapacity:keyPaths.count];
+    [keyPaths enumerateObjectsUsingBlock:^(id keyPath, NSUInteger idx, BOOL *stop) {
+        keyPath = [keyPath description];
+        id value = [document valueForKeyPath:keyPath];
+        value = value ? value : [NSNull null];
+        [result setObject:value forKey:keyPath];
+    }];
+    return result;
+}
 
 - (void)buildQuery:(NSMutableString *)query count:(BOOL)count forRange:(NSRange)range {
     NSString *projection = count ? @"COUNT(DISTINCT _jdb_doc_id)" : @"DISTINCT _jdb_doc_id, _jdb_document";

@@ -141,9 +141,7 @@ describe(@"jdb", ^{
         JDBQuery *activeFemalesQuery = [mainView find:@{@"isActive": @YES, @"gender": @"female"} sort:@[@"name"]];
         NSUInteger activeFemalesCount = [activeFemalesQuery count];
         NSLog(@"activeFemalesCount: %@", @(activeFemalesCount));
-        NSArray *activeFemaleNames = [activeFemalesQuery allAndProject:^id(NSDictionary *document) {
-            return document[@"name"];
-        }];
+        NSArray *activeFemaleNames = [[activeFemalesQuery allAndProjectKeyPaths:@[@"name"]] valueForKeyPath:@"@unionOfObjects.name"];
         NSLog(@"activeFemaleNames: %@", [activeFemaleNames componentsJoinedByString:@", "]);
         
         [activeFemalesQuery allAndModify:^JDBModifyOperation(NSMutableDictionary *document) {
