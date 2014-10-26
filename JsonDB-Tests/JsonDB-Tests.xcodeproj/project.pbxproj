@@ -11,7 +11,6 @@
 		2B34F19B19ED5A41000061A1 /* UseCaseSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B787FB119EB0D42000FC521 /* UseCaseSpec.m */; };
 		2B34F19C19ED63E8000061A1 /* CornerCaseSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B787FB419EB6B3E000FC521 /* CornerCaseSpec.m */; };
 		2B67C2BE19FD7EA2003EE7AE /* SwiftSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B67C2BD19FD7EA2003EE7AE /* SwiftSpec.swift */; };
-		2B67C2BF19FD7EA2003EE7AE /* SwiftSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B67C2BD19FD7EA2003EE7AE /* SwiftSpec.swift */; };
 		2B85626719F817AF008CC06A /* DocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B85626619F817AF008CC06A /* DocumentViewController.m */; };
 		2B85626A19F822E8008CC06A /* JSONTextBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B85626919F822E8008CC06A /* JSONTextBehavior.m */; };
 		2B93EE6A19EABBC300932B13 /* TemplateIcon2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B93EE6719EABBC300932B13 /* TemplateIcon2x.png */; };
@@ -455,7 +454,6 @@
 			files = (
 				2BA7EADD19F060850042574F /* DatabaseCreationSpec.m in Sources */,
 				2B34F19C19ED63E8000061A1 /* CornerCaseSpec.m in Sources */,
-				2B67C2BF19FD7EA2003EE7AE /* SwiftSpec.swift in Sources */,
 				2BB2FFCD19EC4C1700459B1E /* UseCaseSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -653,8 +651,6 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_OBJC_BRIDGING_HEADER = "JsonDB-Tests/JsonDB-Tests-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -699,7 +695,6 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_OBJC_BRIDGING_HEADER = "JsonDB-Tests/JsonDB-Tests-Bridging-Header.h";
 			};
 			name = Release;
 		};
