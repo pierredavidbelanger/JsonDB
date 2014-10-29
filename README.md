@@ -2,6 +2,7 @@
 
 [![CI Status](http://img.shields.io/travis/pierredavidbelanger/JsonDB.svg?style=flat)](https://travis-ci.org/pierredavidbelanger/JsonDB)
 [![Version](https://img.shields.io/cocoapods/v/JsonDB.svg?style=flat)](http://cocoadocs.org/docsets/JsonDB)
+[![Dependency Status](https://www.versioneye.com/user/projects/544e470e9fc4d50cdc000140/badge.svg?style=flat)](https://www.versioneye.com/user/projects/544e470e9fc4d50cdc000140)
 [![License](https://img.shields.io/cocoapods/l/JsonDB.svg?style=flat)](http://cocoadocs.org/docsets/JsonDB)
 [![Platform](https://img.shields.io/cocoapods/p/JsonDB.svg?style=flat)](http://cocoadocs.org/docsets/JsonDB)
 
