@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "JsonDB"
-  s.version = "0.2.1"
+  s.version = "0.3.0"
   s.summary = "A simple in process database to store, query and manipulate JSON documents."
   s.homepage = "https://github.com/pierredavidbelanger/JsonDB"
   s.license = 'MIT'
