@@ -109,6 +109,13 @@ JDBIdentifierFactory const JDBIdentifierFactoryDefault = ^id(JDBDatabase *databa
     return collection;
 }
 
+- (void)cleanup {
+    [self.collectionsCache removeAllObjects];
+    [self.viewCache removeAllObjects];
+    [self.writeDatabaseQueue close];
+    [self.readDatabasePool releaseAllDatabases];
+}
+
 #pragma mark - private
 
 - (instancetype)initAtPath:(NSString *)path withOptions:(NSDictionary *)options {
@@ -175,10 +182,6 @@ JDBIdentifierFactory const JDBIdentifierFactoryDefault = ^id(JDBDatabase *databa
         // TODO: remove old view ?
     }
     return self;
-}
-
-- (void)dealloc {
-    [self.writeDatabaseQueue close];
 }
 
 - (id)handleError:(NSError *)error {

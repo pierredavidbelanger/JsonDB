@@ -151,4 +151,6 @@ extern JDBIdentifierFactory const JDBIdentifierFactoryDefault;
  */
 - (JDBCollection *)collection:(NSString *)name;
 
+- (void)cleanup;
+
 @end
