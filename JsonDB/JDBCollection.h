@@ -28,10 +28,6 @@
 
 @property (strong, readonly) JDBDatabase *database;
 
-@property (strong, readonly) NSString *tableNamePrefix;
-@property (strong, readonly) NSString *docTableName;
-@property (strong, readonly) NSString *flatTableName;
-
 - (id)save:(NSDictionary *)document;
 
 - (JDBView *)viewForPaths:(NSArray *)paths;
