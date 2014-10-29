@@ -37,6 +37,7 @@
 #pragma mark - public
 
 - (id)save:(NSDictionary *)document {
+    NSTimeInterval t = [[NSDate date] timeIntervalSinceReferenceDate];
     __block NSError *error = nil;
     id documentId = nil;
     BOOL hasEmbededDocumentId = NO;
@@ -73,6 +74,8 @@
         }
     }];
     if (error) return [self.database handleError:error];
+    if (self.database.verbose > 0)
+        NSLog(@"SAVE (%ldms)", (long)(1000 * ([[NSDate date] timeIntervalSinceReferenceDate] - t)));
     return documentId;
 }
 
