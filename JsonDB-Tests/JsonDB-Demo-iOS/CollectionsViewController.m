@@ -27,6 +27,7 @@
 #import "DocumentsViewController.h"
 
 #import "JsonDB.h"
+#import "TRZSlideLicenseViewController/TRZSlideLicenseViewController.h"
 
 @interface CollectionsViewController ()
 
@@ -60,6 +61,13 @@
         });
     });
     return cell;
+}
+
+- (IBAction)viewLicenses:(id)sender {
+    TRZSlideLicenseViewController *controller = [[TRZSlideLicenseViewController alloc] init];
+    controller.podsPlistName = @"Pods-JsonDB-Demo-iOS-acknowledgements.plist";
+    controller.navigationItem.title = @"Licenses";
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {

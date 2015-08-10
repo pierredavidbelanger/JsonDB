@@ -1,7 +1,7 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
 target 'JsonDB-Tests-iOS' do
-  platform :ios, '5.0'
+  platform :ios, '5.1.1'
   pod 'JsonDB', :path => '../'
   pod 'Specta', '~> 0.0'
   pod 'Expecta', '~> 0.0'
@@ -15,8 +15,8 @@ target 'JsonDB-Tests-OSX' do
 end
 
 target 'JsonDB-Demo-iOS' do
-  platform :ios, '5.0'
+  platform :ios, '7.0'
   pod 'JsonDB', :path => '../'
   pod 'JSONSyntaxHighlight', '~> 1.0.0'
-  # pod 'QuickDialog', '~> 1.0'
+  pod 'TRZSlideLicenseViewController', '~> 0.9'
 end
