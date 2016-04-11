@@ -22,6 +22,8 @@
 
 #import "JsonDB+Private.h"
 
+#import <sqlite3.h>
+
 NSString * const JDBErrorDomain = @"JDBErrorDomain";
 
 NSString * const JDBDatabaseOptionVerboseKey = @"JDBDatabaseOptionVerboseKey";

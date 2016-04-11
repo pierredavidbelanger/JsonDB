@@ -55,7 +55,7 @@ describe(@"jdb", ^{
         // Find the Johns ordered alphabetically
         NSArray *johns = [[collection find:@{@"playerName": @{@"$like": @"John %"}} sort:@[@"playerName"]] all];
         expect(johns).to.haveCountOf(2);
-        expect(cheaters[0][@"playerName"]).to.equal(@"John Appleseed");
+        expect(johns[0][@"playerName"]).to.equal(@"John Appleseed");
 
         // Find the first one with a score over 9000, flag it as a cheater and return the old document
         NSDictionary *over9000 = [[collection find:@{@"score": @{@"$gt": @9000}}] firstAndModify:^JDBModifyOperation(NSMutableDictionary *document) {

@@ -16,9 +16,9 @@ I hope you enjoy this project.
 
 ## Stability
 
-You should expect the public API to change until I tag a `1.0.0` version. After that, I will try to follow as much as possible the [Semantic Versioning](http://semver.org/).
+Since the `1.0.0` version this lib should be fairly stable and changes to the API (and storage schema) will be reflected by the [Semantic Versioning](http://semver.org/).
 
-JsonDB is coded in and designed for Objective-C, but it also works with Swift, you just need to add `#import "JsonDB.h"` in the Bridging Header.
+JsonDB is coded in and designed for Objective-C, but it also works with Swift, you just need to add `#import "JsonDB.h"` in the Bridging Header. The API is still a kind of mess when called from Swift though, some help on that matter will be much appreciated.
 
 ## Get Started
 
@@ -147,7 +147,7 @@ Find the players named John ordered alphabetically
 ```objc
 NSArray *johns = [[collection find:@{@"playerName": @{@"$like": @"John %"}} sort:@[@"playerName"]] all];
 expect(johns).to.haveCountOf(2);
-expect(cheaters[0][@"playerName"]).to.equal(@"John Appleseed");
+expect(johns[0][@"playerName"]).to.equal(@"John Appleseed");
 ```
 
 Find the first one with a score over 9000, flag it as a cheater and return the old document

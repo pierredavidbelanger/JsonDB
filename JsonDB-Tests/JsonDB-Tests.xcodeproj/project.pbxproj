@@ -10,6 +10,7 @@
 		26E4B34D7BC5FEFE49F89CDD /* libPods-JsonDB-Tests-OSX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B86C87622AF0EAB8D18C0C2C /* libPods-JsonDB-Tests-OSX.a */; };
 		2B34F19B19ED5A41000061A1 /* UseCaseSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B787FB119EB0D42000FC521 /* UseCaseSpec.m */; };
 		2B34F19C19ED63E8000061A1 /* CornerCaseSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B787FB419EB6B3E000FC521 /* CornerCaseSpec.m */; };
+		2B41BAFF1CBBF6400004B1BF /* SwiftSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B67C2BD19FD7EA2003EE7AE /* SwiftSpec.swift */; };
 		2B5A18A21B78F085003CBEE9 /* Pods-JsonDB-Demo-iOS-acknowledgements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B5A18A11B78F085003CBEE9 /* Pods-JsonDB-Demo-iOS-acknowledgements.plist */; };
 		2B67C2BE19FD7EA2003EE7AE /* SwiftSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B67C2BD19FD7EA2003EE7AE /* SwiftSpec.swift */; };
 		2B85626719F817AF008CC06A /* DocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B85626619F817AF008CC06A /* DocumentViewController.m */; };
@@ -224,6 +225,7 @@
 				2BC84A2819E8DC6E004DB8F8 /* Frameworks */,
 				2BC84A2919E8DC6E004DB8F8 /* Resources */,
 				9E440A18B78133E03660CFB1 /* Copy Pods Resources */,
+				ED1A0A125AD11389B6B00B27 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -243,6 +245,7 @@
 				2BC84A3619E8DC83004DB8F8 /* Frameworks */,
 				2BC84A3719E8DC83004DB8F8 /* Resources */,
 				B44157D3E86EBF4EA00B7070 /* Copy Pods Resources */,
+				BBF2E4D69BDFCCCF5FF84E2A /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -262,6 +265,7 @@
 				2BE179CA19F799CF00398D39 /* Frameworks */,
 				2BE179CB19F799CF00398D39 /* Resources */,
 				7E76C216BEFCABB82282419A /* Copy Pods Resources */,
+				3D0DA8BDE26C50ECFE1CF20F /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -278,6 +282,7 @@
 		2BC84A2119E8DBFC004DB8F8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0600;
 				TargetAttributes = {
 					2BC84A2A19E8DC6E004DB8F8 = {
@@ -348,6 +353,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3D0DA8BDE26C50ECFE1CF20F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JsonDB-Demo-iOS/Pods-JsonDB-Demo-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		54A33DBCE9D2CC99B42538AE /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -423,6 +443,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		BBF2E4D69BDFCCCF5FF84E2A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JsonDB-Tests-OSX/Pods-JsonDB-Tests-OSX-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D590D0AA720C15E315243EC6 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -436,6 +471,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ED1A0A125AD11389B6B00B27 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JsonDB-Tests-iOS/Pods-JsonDB-Tests-iOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -458,6 +508,7 @@
 			files = (
 				2BA7EADD19F060850042574F /* DatabaseCreationSpec.m in Sources */,
 				2B34F19C19ED63E8000061A1 /* CornerCaseSpec.m in Sources */,
+				2B41BAFF1CBBF6400004B1BF /* SwiftSpec.swift in Sources */,
 				2BB2FFCD19EC4C1700459B1E /* UseCaseSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -655,6 +706,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "JsonDB-Tests/JsonDB-Tests-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -699,6 +751,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "JsonDB-Tests/JsonDB-Tests-Bridging-Header.h";
 			};
 			name = Release;
 		};

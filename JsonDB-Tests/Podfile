@@ -3,15 +3,15 @@ source 'https://github.com/CocoaPods/Specs.git'
 target 'JsonDB-Tests-iOS' do
   platform :ios, '5.1.1'
   pod 'JsonDB', :path => '../'
-  pod 'Specta', '~> 0.0'
-  pod 'Expecta', '~> 0.0'
+  pod 'Specta', '~> 1.0'
+  pod 'Expecta', '~> 1.0'
 end
 
 target 'JsonDB-Tests-OSX' do
   platform :osx, '10.7'
   pod 'JsonDB', :path => '../'
-  pod 'Specta', '~> 0.0'
-  pod 'Expecta', '~> 0.0'
+  pod 'Specta', '~> 1.0'
+  pod 'Expecta', '~> 1.0'
 end
 
 target 'JsonDB-Demo-iOS' do
