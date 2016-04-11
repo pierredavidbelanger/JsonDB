@@ -3,4 +3,4 @@ podfile: JsonDB-Tests/Podfile
 xcode_workspace: JsonDB-Tests/JsonDB-Tests.xcworkspace
 xcode_scheme: JsonDB-Tests-OSX
 before_install:
-  - gem install cocoapods -v '0.39.0'
+  - gem install cocoapods -v '0.34.4'
