@@ -1,0 +1,31 @@
+PODS:
+  - Expecta (1.0.5)
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - JsonDB (1.0.1):
+    - FMDB (~> 2.0)
+  - JSONSyntaxHighlight (1.0.0)
+  - Specta (1.0.5)
+  - TRZSlideLicenseViewController (0.9.6)
+
+DEPENDENCIES:
+  - Expecta (~> 1.0)
+  - JsonDB (from `../`)
+  - JSONSyntaxHighlight (~> 1.0.0)
+  - Specta (~> 1.0)
+  - TRZSlideLicenseViewController (~> 0.9)
+
+EXTERNAL SOURCES:
+  JsonDB:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  JsonDB: adda3d05f40e31d7cc2206f7e56879745fb70685
+  JSONSyntaxHighlight: 8685d8ad0259b909dc97a829fdfbefbec363f449
+  Specta: ac94d110b865115fe60ff2c6d7281053c6f8e8a2
+  TRZSlideLicenseViewController: f43346cc0ba579674549d5194c913c7001a24f1b
+
+COCOAPODS: 0.39.0
