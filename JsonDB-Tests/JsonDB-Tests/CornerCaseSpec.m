@@ -22,6 +22,8 @@
 
 #import <sqlite3.h>
 
+#import <JsonDB+Unsafe.h>
+
 SpecBegin(CornerCase)
 
 describe(@"jdb corner case", ^{
@@ -90,6 +92,19 @@ describe(@"jdb corner case", ^{
         expect(results).toNot.beNil;
         expect(results).to.haveCountOf(1);
         NSLog(@"results: %@", @(results.count));
+    });
+    
+    it(@"should allow custom (unsafe) SQL query if needed", ^{
+        JDBCollection *test = [database collection:@"test_product"];
+        
+        [test save:@{@"label": @"No price product"}];
+        [test save:@{@"label": @"Costly product", @"price": @"$16.99"}];
+        [test save:@{@"label": @"Cheap product", @"price": @"$6.99"}];
+        
+        NSArray *results = [[[test viewForPaths:@[@"label", @"price"]] where:@"\"label\" LIKE :label AND NOT \"price\" IS NULL" parameters:@{@"label": @"% product"} orderBy:@"CAST(SUBSTR(\"price\", 2) AS DECIMAL)"] all];
+        expect(results).toNot.beNil;
+        expect(results).to.haveCountOf(2);
+        expect(results[0][@"price"]).to.equal(@"$6.99");
     });
     
     it(@"should support join", ^{

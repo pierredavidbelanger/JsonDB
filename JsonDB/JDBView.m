@@ -49,6 +49,16 @@
     NSMutableString *orderBy = [NSMutableString string];
     JDBTransformSortToOrderBy(sort, paths, orderBy, &error);
     if (error) [self.collection.database handleError:error];
+    return [self where:where parameters:parameters orderBy:orderBy];
+}
+
+#pragma mark - unsafe
+
+- (JDBQuery *)where:(NSString *)where parameters:(NSDictionary *)parameters {
+    return [self where:where parameters:parameters orderBy:nil];
+}
+
+- (JDBQuery *)where:(NSString *)where parameters:(NSDictionary *)parameters orderBy:(NSString *)orderBy {
     return [[JDBQuery alloc] initWithView:self where:where orderBy:orderBy andParameters:parameters];
 }
 
